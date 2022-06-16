@@ -1,0 +1,36 @@
+.wheel {
+  width: calc(230px * var(--pixel-size));
+  height: calc(130px * var(--pixel-size));
+  overflow: hidden;
+  position: relative;
+  margin: 4em auto;
+}
+
+.anim {
+  -webkit-animation: moveSpritesheet 1s steps(4) infinite;
+          animation: moveSpritesheet 1s steps(4) infinite;
+  width: calc(100px * var(--pixel-size));
+  position: absolute;
+}
+
+@-webkit-keyframes moveSpritesheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes moveSpritesheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.canva {
+  text-align: center;
+  padding: 10%;
+}/*# sourceMappingURL=prod.css.map */

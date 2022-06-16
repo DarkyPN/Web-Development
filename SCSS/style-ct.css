@@ -1,0 +1,31 @@
+.form-ct {
+  position: relative;
+  left: 35%;
+  top: 2%;
+  padding: 5%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.text-f {
+  color: red;
+}
+
+.bg-img {
+  border-radius: 5rem;
+  background-image: url(/IMG/carbon.png);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 500px;
+}
+
+.btn {
+  border-radius: 5rem;
+  border-width: 3px;
+  color: red;
+  font-size: large;
+  font-weight: bolder;
+}/*# sourceMappingURL=style-ct.css.map */

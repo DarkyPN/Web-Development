@@ -1,0 +1,31 @@
+body {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(/IMG/BC.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+.border-ab {
+    padding: 4em;
+    top: 30%;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(162, 162, 171), rgb(172, 43, 20)) 1;
+    backdrop-filter: blur(10px);
+    margin: 200px !important;
+    text-align: center;
+   }
+
+
+   .border-ab2 {
+    padding: 4em;
+    top: 70%;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(162, 162, 171), rgb(172, 43, 20)) 1;
+    backdrop-filter: blur(10px);
+    margin: 200px !important;
+    text-align: center;
+   }
