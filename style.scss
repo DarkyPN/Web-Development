@@ -1,6 +1,6 @@
 body{
     display: block;
-    background: #3a3838;
+    background: #272727;
     margin: 1%;
     padding: auto;
 }
@@ -13,7 +13,7 @@ body{
     margin-right:14%;
     padding: 3%;
     color: rgb(255, 255, 255);
-    border: #a95812 double 20px;
+    border: #b8281d double 20px;
     border-bottom: none;
     border-radius: 50%;
     border-top-left-radius: 20%;
@@ -28,7 +28,7 @@ body{
     margin-right: 18%;
     padding: 0;
     color: rgb(255, 255, 255);
-    border: #a95812 solid 5px;
+    border: #b8281d solid 5px;
     border-top: none;
     border-radius: 90%;
     border-top-left-radius: 20%;
@@ -44,7 +44,7 @@ body{
         margin-right: 20%;
         padding: 0;
         color: rgb(255, 255, 255);
-        border: #a95812 solid 5px;
+        border: #b8281d solid 5px;
         border-top: none;
         border-radius: 90%;
         border-top-left-radius: 20%;
@@ -76,7 +76,7 @@ body{
   /* Control the left side */
   .left {
     left: 0;
-    background-image: linear-gradient(#3a3838 10%, rgb(146, 141, 141) 100%);
+    background-image: linear-gradient(#272727 10%, rgb(146, 141, 141) 100%);
   }
   /* Control the right side */
 .right {
@@ -95,6 +95,13 @@ body{
   /* Style the image inside the centered container, if needed */
   .centered img {
     width: 150px;
-    border-radius: 20%;
+    border-radius: 40%;
+  }
+  .border{
+    border: #b8281d solid 10px;
+    border-top: none;
+    border-radius: 40%;
+    border-bottom:none;
+    background-color: #ffffff;
   }
 
