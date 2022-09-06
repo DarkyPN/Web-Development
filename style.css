@@ -1,6 +1,10 @@
 body {
   display: block;
-  background: #272727;
+  background-image: url(/images/bc3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   margin: 1%;
   padding: auto;
 }
@@ -13,17 +17,19 @@ body {
   margin-right: 14%;
   padding: 3%;
   color: rgb(255, 255, 255);
-  border: #b8281d double 20px;
+  border: #05432c double 20px;
   border-bottom: none;
   border-radius: 50%;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
+  background-color: #049164;
   font-family: "Times New Roman", Times, serif;
 }
 
 .subtitle {
   max-width: 35%;
   text-align: center;
+  font-size: 20px;
   margin: auto;
   margin-right: 18%;
   padding: 0;
@@ -37,8 +43,9 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .subtitle {
+  .description, .glow, .glow-tx {
     max-width: 35%;
+    top: 50%;
     text-align: center;
     margin: auto;
     margin-right: 20%;
@@ -56,10 +63,22 @@ body {
   max-width: 500px;
   text-align: center;
   margin: auto;
-  padding: 0;
-  color: rgb(255, 255, 255);
+  padding: 10%;
+  color: rgb(2, 34, 26);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
+  font-weight: bolder;
+}
+
+.description::after {
+  content: " ";
+  position: absolute;
+  top: 39%;
+  left: -15px;
+  right: -15px;
+  bottom: 2%;
+  border-radius: 10%;
+  box-shadow: inset 0 0 20px #fff, inset 10px 0 20px rgb(48, 124, 46), inset -10px 0 40px #0ff;
 }
 
 .split {
@@ -74,8 +93,8 @@ body {
 
 /* Control the left side */
 .left {
-  left: 0;
-  background-image: linear-gradient(#272727 10%, rgb(146, 141, 141) 100%);
+  left: 8%;
+  top: 0%;
 }
 
 /* Control the right side */
@@ -96,13 +115,46 @@ body {
 /* Style the image inside the centered container, if needed */
 .centered img {
   width: 150px;
-  border-radius: 40%;
 }
 
 .border {
-  border: #b8281d solid 10px;
-  border-top: none;
-  border-radius: 40%;
+  width: 100%;
+  border: #063e29 solid 5px;
+  border-top: 5px;
   border-bottom: none;
-  background-color: #ffffff;
+}
+
+.border-img {
+  border-radius: 40%;
+  border: #121111 solid 4px;
+  background-color: #121111;
+}
+
+.glow {
+  border-radius: 40%;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px rgb(48, 124, 46), inset -20px 0 80px #0ff, inset 20px 0 300px rgb(9, 142, 93), inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px rgb(7, 155, 116), 10px 0 80px #0ff; /* outer right cyan */
+}
+
+.glow-p {
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d, 0 0 10px #089a0d;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164, 0 0 10px #049164;
+  }
 }/*# sourceMappingURL=style.css.map */
